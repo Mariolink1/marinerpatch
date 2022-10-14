@@ -1,4 +1,4 @@
-FROM balenalib/raspberry-pi-debian:latest
+#FROM balenalib/raspberry-pi-debian:latest
 
 RUN apt-get update && apt-get -y upgrade && apt-get update
 RUN apt-get -y install sudo dpkg-dev debhelper dh-virtualenv \
