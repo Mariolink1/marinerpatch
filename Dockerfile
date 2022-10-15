@@ -20,6 +20,7 @@ RUN mkdir /build
 COPY . /build/
 
 WORKDIR /build
+RUN pip install poetry
 RUN python3 /root/.local/bin/poetry build
 
 WORKDIR /build/dist
