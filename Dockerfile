@@ -21,7 +21,7 @@ COPY . /build/
 
 WORKDIR /build
 RUN pip install poetry
-RUN pip uninstall virtualenv
+RUN pip uninstall --yes virtualenv
 RUN python3 /root/.local/bin/poetry build
 
 WORKDIR /build/dist
